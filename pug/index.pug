@@ -1,0 +1,50 @@
+include mixin.pug
+include head.pug
+span.circule
+//- span.circule2
+//-     img(src="../img/logotwo.png", alt="")
+header
+    nav.navegador 
+        .navegador__logo
+            img#bg(src="../img/logo.png", alt="Logo")
+        .navegador__container 
+            .navegador__container--nav 
+                ul#nav 
+                    li: a(href="")  Inicio
+                    li: a(href='#main')  Servicios
+                    li: a(href="")  Quienes Somos
+                    li: a(href="")  Contactos   
+            .navegador__container--titulo#text
+                p No Competimos, SERVIMOS¡¡¡
+                h1 TuSolución.com
+                p Tus tramites tienen solución, con la mejor y rápida atención.                  
+        
+main
+    section.scroll#scroll
+        img(src="../img/paris.jpg", alt="Paris", data-parallax='{"y": 230}')
+        //- p Paris est magique	
+    .service
+        section.box.box_visible 
+            button.button
+                a(href="")  Ver mas..
+            +caja("/iess.png" , "" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/sercop.png" , "" ,  "SERCOP" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/registrocivil.png" , "" , "REGISTRO CIVIL" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/emelnorte.jpg" , "" , "EmelNorte" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/rpi.jpg" , "REGISTRO" , "DE LA PORPIEDAD" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/emapa.png" , "EMAPA-I" , "" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/ant.jpg" , "AGENCIA NACIONAL" ,  "DE TRANSITO" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+        section.boxtwo 
+            button.buttontwo.box_invisible
+                a(href="") Regresar.. 
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+            +caja("/iess.png" , "IESS" , "+ Jubilaciones " , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios" , "+ Creditos Hipotecarios")
+footer 
+  

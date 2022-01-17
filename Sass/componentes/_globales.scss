@@ -1,0 +1,75 @@
+//Variables
+$Fuente1: DM Serif Text;
+$Fuente2: 'Oswald',
+sans-serif;
+$color-primario: #b59356;
+$color-letter: #2B636C;
+$color-secundario: #B5AA99;
+$color-claro: #fff9f9;
+
+// Mixin
+@mixin circulo{
+    width: 90vmax;
+    height: 45vmax;
+    position: absolute;
+    margin-top:-17.5%;
+    margin-left: 8.75%;
+    margin-bottom: auto;
+    margin-right: auto;
+    background-color: get-opacity($color-secundario, 10%);
+    border-radius: 0 0 0 100%;
+}
+@mixin circulo2 {
+    width:  110vmax;
+    height: 70vmax;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: -50%;
+    margin-right:0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: get-opacity($color-secundario, 10%);
+    border-radius: 50%;
+    z-index: 1;
+}
+@mixin sombras{
+    text-shadow: -15px 15px rgb(225, 222, 222);
+    
+}
+@mixin sombra{
+    box-shadow: 0 0 100px 0 $color-secundario;
+}
+@mixin hover {
+    text-shadow: none;
+    transform: scale(1.2);
+    transition: all ease 1s;    
+}
+@mixin titulos($fuente) {
+    @if $fuente==$Fuente1 {
+        font-family: $Fuente1;
+    }
+
+    @else {
+        font-family: $Fuente2;
+        font-weight: 700;
+    }
+
+}
+// @mixin caja {
+//     width: 280px;
+//     height: 400px;
+//     position: absolute;
+// }
+
+// Funciones
+
+@function get-opacity($color, $amount) {
+    @return rgba($color, $amount);
+}
+
+
+body{
+    margin: 0;
+    background-color: $color-claro;
+    @include titulos($Fuente2)
+}

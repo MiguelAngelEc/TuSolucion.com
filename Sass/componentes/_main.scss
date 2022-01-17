@@ -1,0 +1,25 @@
+main{ 
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+    .scroll{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 72px;
+        padding: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 10px 10px 0 $color-secundario;
+       
+        img{
+            width: 1300px;
+            height: 330px;
+            opacity: 90%;  
+            border-radius: 10px;
+            margin-bottom: 5px;      
+        }
+    }
+    
+

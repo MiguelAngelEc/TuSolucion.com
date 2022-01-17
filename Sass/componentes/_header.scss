@@ -1,0 +1,114 @@
+header{
+    display: flex;
+    margin-bottom: 50px;
+    .navegador{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        position: relative;
+        &__logo{
+            // cursor: pointer;
+            position: absolute;
+            img{
+                width: 200px;
+                height: 180px;
+                padding: 10px;
+                margin: 40px;
+                transition: .7s;
+            }
+            // img:hover {
+            //     @include hover
+            // }
+        }
+        &__container{
+            width: 100%;
+            display: block;
+        .navegador__container--nav {
+            width: 100%;
+            min-width: 25%;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            }
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: end;    
+                padding: 5px;
+                cursor: pointer;    
+            }
+            li{
+                font-family: $Fuente1;
+                font-size: 1.2rem;
+                margin: 10px 20px 10px 20px;
+                transition: .7s;
+                list-style: none;
+                @include sombras
+            }
+            a{
+                text-decoration: none;
+                color: $color-primario;
+            }
+            li:hover{
+                @include hover
+            }
+            .navegador__container--titulo {
+                width: 100%;
+                height: 50px;
+                margin: 100px 0 0 0;
+                padding: 0;
+                flex-wrap: wrap;
+                flex-basis: 20rem;
+                flex-grow: 1;
+                border-bottom: none;
+                h1 {
+                    width: 80%;
+                    text-align: center;
+                    font-size: 7em;
+                    font-family: $Fuente1;
+                    font-weight: bold;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    transition: .7s;
+                    cursor: pointer;
+                    letter-spacing: .3cm;
+                    color: $color-primario;
+                    @include sombras;
+            }
+            @media screen and (min-width: 1300px - 300px) {
+                h1 {
+                    font-size: 1em;
+                }
+                }
+
+                h1:hover {
+                    @include hover
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 2.5em;
+                    font-family: $Fuente1;
+                    font-weight: 400;
+                    margin: 0 auto;
+                    transition: .7s;
+                    letter-spacing: .1cm;
+                    color: $color-primario;
+                    // @include sombras
+                }
+
+                // p:hover {
+                //     @include hover
+                // }
+            }
+
+            }
+        }
+    }   
+
+
+
+
+
+
